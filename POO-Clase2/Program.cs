@@ -1,5 +1,6 @@
 ﻿using POO_Clase2.Ejercicio_1;
 using POO_Clase2.Ejercicio_2;
+using POO_Clase2.Ejercicio_3;
 
 namespace POO_Clase2
 {
@@ -53,6 +54,23 @@ namespace POO_Clase2
             // Implementar los metodos para que cada figura calcule el area y el perimetro como corresponda
             // Instanciar las clases e imprimir los valores del area y el perimetro para cada figura
             // Mostrar los resultados por consola
+
+            Circulo circulo = new Circulo()
+            {
+                Radio = 1
+            };
+
+            Console.WriteLine("El area del circulo es: " + circulo.calcularArea());
+            Console.WriteLine("El perimetro del circulo es: " + circulo.calcularPerimetro());
+
+            Rectangulo rectangulo = new Rectangulo()
+            {
+                Lado1 = 2,
+                Lado2 = 3,
+            };
+
+            Console.WriteLine("El area del rectangulo es: " + rectangulo.calcularArea());
+            Console.WriteLine("El perimetro del rectangulo es: " + rectangulo.calcularPerimetro());
             #endregion
         }
     }
